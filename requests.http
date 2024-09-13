@@ -1,0 +1,9 @@
+POST http://localhost:3000/email HTTP/1.1
+content-type: application/json
+
+{
+    "to": "rubinhoplay@network.com",
+    "subject": "O maior email do minecraft",
+    "text": "Ola, tudo bem? Eu sou o rubinho play e estou enviando esse email para você",
+    "from": "gabrielplay@minecraft.com"
+}
