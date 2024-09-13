@@ -2,6 +2,10 @@ FROM node:16.16.0-slim
 
 WORKDIR /home/node/app
 
+COPY . .
+
+RUN npm install
+
 USER node
 
-CMD [ "tail", "-f", "/dev/null" ]
+CMD ["npm", "start"]
