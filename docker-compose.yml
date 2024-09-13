@@ -1,0 +1,8 @@
+image: "3.8"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/home/node/app
+    ports:
+      - "3000:3000"
