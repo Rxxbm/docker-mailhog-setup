@@ -1,4 +1,3 @@
-image: "3.8"
 services:
   app:
     build: .
@@ -6,3 +5,10 @@ services:
       - .:/home/node/app
     ports:
       - "3000:3000"
+
+  email:
+    image: mailhog/mailhog:latest
+    platform: linux/amd64
+    ports:
+      - "8025:8025" # MailHog web UI
+      - "1025:1025" # MailHog SMTP
